@@ -31,5 +31,22 @@
         <!-- Full id location:
              action="openacademy.course_list_action"
              It is not required when it is the same module -->
+
+
+
+        <record model="ir.ui.view" id="course_form_view">
+            <field name="name">course.form</field>
+            <field name="model">openacademy.course</field>
+            <field name="arch" type="xml">
+                <form string="Course Form">
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                            <field name="description" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
     </data>
 </odoo>
